@@ -27,13 +27,14 @@ Este repositorio contiene mis configuraciones personalizadas para NixOS, incluye
 - [x] Tener un PowerMenu en waybar
 - [ ] Poder cambiar el tema en base al fondo
 - [x] Crear un Script de instalacion
-- [ ] Aprender a manejar el sistema por home-manager
-- [ ] Modularizar mi sistema en base a flakes
+- [x] Aprender a manejar el sistema por home-manager
+- [ ] Modularizar mi sistema
 - [ ] Agregar binds utiles en el sistema
 - [ ] Aprender a usar nvim sin de comandos con ":"
 - [ ] Bloqueo de pantalla automatico
 - [ ] Suspension del equipo automatica
 - [ ] Agregar y personalizar Spotify
+- [ ] Hacer la instalacion automatica
 - [ ] ...
 
 ## Objetivo
@@ -47,14 +48,31 @@ para el final de esto espero poder manejarme completamente en nix y poder usarlo
 # Clona el repositorio en tu HOME o donde prefieras
 git clone https://github.com/tu-usuario/.NixOs-Dots.git ~/.NixOs-Dots
 
-# Entra a la carpeta
-cd ~/.NixOs-Dots
+# Debes modificar 3 archivos para que se adapten a tu nombre de host y usuario:
 
-# Da permisos si no los tiene (opcional)
-chmod +x install.sh
+# En configuration.nix
+networking.hostName = "TuHost";
+users.users.tu_usuario
 
-# Ejecuta el script
-./install.sh
+# En home.nix
+home.username = "tu_usuario";
+home.homeDirectory = "/home/tu_usuario";
+
+# En flake.nix
+nixosConfigurations = {
+  TuHost = lib.nixosSystem {
+homeConfigurations = {
+  tu_usuario = home-manager.lib.homeManagerConfiguration {
+
+# Cambia al directorio de los dots
+cd ./NixOs-Dots/
+
+# Ejecuta el comando para la nueva gen
+sudo nixos-rebuild switch --flake ~/.NixOs-Dots#TuHost
+
+# Ejecuta el comando para las variables del usuario
+home-manager switch --flake ~/.NixOs-Dots#tu_usuario
+
 ```
 </details>
 <details>
@@ -78,12 +96,13 @@ chmod +x install.sh
 - [ ] Change theme based on the wallpaper
 - [x] Create an installation script
 - [ ] Learn to manage the system with home-manager
-- [ ] Modularize my system using flakes
+- [ ] Modularize my system
 - [ ] Add useful keybinds to the system
 - [ ] Learn to use nvim without needing ":" commands
 - [ ] Automatic screen lock
 - [ ] Automatic system suspend
 - [ ] Install Spotify and tune it
+- [ ] Make a install script
 - [ ] ...
 
 ## Main objective
@@ -95,16 +114,32 @@ By the end of this process, I aim to be fully proficient with Nix and use it as 
 ## Installation
 
 ```bash
-# Clone the repository into your HOME or preferred location
+# Clone the repository into your HOME or any preferred location
 git clone https://github.com/your-username/.NixOs-Dots.git ~/.NixOs-Dots
 
-# Enter the folder
-cd ~/.NixOs-Dots
+# You must edit 3 files to match your hostname and username:
 
-# Make it executable if necessary (optional)
-chmod +x install.sh
+# In configuration.nix
+networking.hostName = "YourHost";
+users.users.your_username
 
-# Run the script
-./install.sh
+# In home.nix
+home.username = "your_username";
+home.homeDirectory = "/home/your_username";
+
+# In flake.nix
+nixosConfigurations = {
+  YourHost = lib.nixosSystem {
+homeConfigurations = {
+  your_username = home-manager.lib.homeManagerConfiguration {
+
+# Change to the dotfiles directory
+cd ./NixOs-Dots/
+
+# Run the system rebuild command
+sudo nixos-rebuild switch --flake ~/.NixOs-Dots#YourHost
+
+# Run the user configuration command
+home-manager switch --flake ~/.NixOs-Dots#your_username
 ```
 </details>
