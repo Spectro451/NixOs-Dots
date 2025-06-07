@@ -14,8 +14,6 @@ Este repositorio contiene mis configuraciones personalizadas para NixOS, incluye
 
 
 
-
-
   
 ## Lista de objetivos
 

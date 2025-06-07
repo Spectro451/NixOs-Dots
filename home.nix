@@ -3,19 +3,17 @@
 {
   home.username = "kiwi";
   home.homeDirectory = "/home/kiwi";
-
-  #Version compatible del home
+    #Version compatible del home
   home.stateVersion = "25.05"; # Please read the comment before changing.
-  
+ 
   imports = [
     ./modules/home/zsh.nix
     ./modules/home/hyprland.nix
   ];
-  home.packages = [
+  home.packages = with pkgs; [
     ranger
     neovim
     btop
-    kitty
     swww
     waybar
     rofi-wayland
@@ -40,7 +38,10 @@
   ];
 
   home.file = {
-  ".config/hypr/hyprland.conf".source = ./Dots/hypr/hyprland.conf;
+
+  ".config/hypr/Scripts/Inicio.zsh".source = ./Scripts/Inicio.zsh;
+  ".config/hypr/Scripts/WallPaper.zsh".source = ./Scripts/WallPaper.zsh;
+  #".config/hypr/hyprland.conf".source = ./Dots/hypr/hyprland.conf;
   ".config/hypr/hyprlock.conf".source = ./Dots/hypr/hyprlock.conf;
   ".config/hypr/wallpaper.jpg".source = ./Dots/hypr/wallpaper.jpg;
   ".config/waybar/config.jsonc".source = ./Dots/waybar/config.jsonc;
@@ -63,15 +64,12 @@
   ".config/cava/shaders/pass_through.vert".source = ./Dots/cava/shaders/pass_through.vert;
   ".config/cava/shaders/northern_lights.frag".source = ./Dots/cava/shaders/northern_lights.frag;
   ".config/cava/shaders/winamp_line_style_spectrum.frag".source = ./Dots/cava/shaders/winamp_line_style_spectrum.frag;
-  };
-
-  #Variables de sesion
-  home.sessionVariables = {
-    EDITOR = "nvim";
-    VISUAL = "nvim";
-    RANGER_LOAD_DEFAULT_RC = "FALSE";
+  ".config/hypr/Scripts/Inicio.zsh".executable = true;
+  ".config/hypr/Scripts/WallPaper.zsh".executable = true;
   };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  nixpkgs.config.allowUnfree = true;
 }

@@ -44,6 +44,11 @@
   # I cant figure out how to make this work UnU  
     services.displayManager.sddm.autoNumlock = true;
 
+    	programs.hyprland={
+ 	enable=true;
+	xwayland.enable=true;
+ 	};
+
   # Controlador NVIDIA
   services.xserver.videoDrivers = [ "nvidia" ];
   hardware.graphics.enable = true;
@@ -55,7 +60,12 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
+  #Variables de sesion
   environment.sessionVariables = {
+    EDITOR = "nvim";
+    VISUAL = "nvim";
+    TERM = "xterm-kitty";
+    RANGER_LOAD_DEFAULT_RC = "FALSE";
     WLR_NO_HARDWARE_CURSORS = "1";
     #Electron
     NIXOS_OZONE_WL = "1";
@@ -105,6 +115,8 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  programs.zsh.enable = true;
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -116,6 +128,7 @@
     unzip
     ripgrep
     kdePackages.sddm
+    kitty
   ];
 
   #fuentes
