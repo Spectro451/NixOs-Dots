@@ -143,3 +143,14 @@ sudo nixos-rebuild switch --flake ~/.NixOs-Dots#YourHost
 home-manager switch --flake ~/.NixOs-Dots#your_username
 ```
 </details>
+
+## Imagenes
+
+- _Pantalla principal._
+![Pantalla de inicio](images/inicio.png)  
+
+- _Menú flotante para suspender, apagar o reiniciar el sistema._
+![Menú de apagado](images/powermenu.png)  
+
+- _Wallpaper._
+![Fondo de escritorio](images/fondo.png)  
