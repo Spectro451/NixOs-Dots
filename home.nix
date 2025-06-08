@@ -43,7 +43,6 @@
   ".config/hypr/Scripts/WallPaper.zsh".source = ./Scripts/WallPaper.zsh;
   #".config/hypr/hyprland.conf".source = ./Dots/hypr/hyprland.conf;
   ".config/hypr/hyprlock.conf".source = ./Dots/hypr/hyprlock.conf;
-  #".config/hypr/wallpaper.jpg".source = ./Dots/hypr/wallpaper.jpg;
   ".config/waybar/config.jsonc".source = ./Dots/waybar/config.jsonc;
   ".config/waybar/style.css".source = ./Dots/waybar/style.css;
   ".config/rofi/colors.rasi".source = ./Dots/rofi/colors.rasi;

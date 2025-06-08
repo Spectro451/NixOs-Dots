@@ -86,14 +86,18 @@ case ${chosen} in
 		run_cmd --reboot
         ;;
     $lock)
-		run_cmd
-		hyprlock
-		i3lock
+        run_cmd
+        pkill -x hyprlock 2>/dev/null || true
+        sleep 0.1
+        hyprlock
+        i3lock
         ;;
     $suspend)
-		run_cmd --suspend
-		hyprlock
-		i3lock
+        run_cmd --suspend
+        pkill -x hyprlock 2>/dev/null || true
+        sleep 0.1
+        hyprlock
+        i3lock
         ;;
     $logout)
 		run_cmd --logout
