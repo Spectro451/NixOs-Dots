@@ -16,6 +16,6 @@
   networking.networkmanager.enable = true;
 
   #Permite wireless
-  networking.wireless.enable = true;
+  #networking.wireless.enable = true;
 
 }
