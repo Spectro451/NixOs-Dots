@@ -67,7 +67,7 @@
   ".config/hypr/Scripts/Inicio.zsh".executable = true;
   ".config/hypr/Scripts/WallPaper.zsh".executable = true;
   ".config/hypr/WallPaper" = {
-    source = ./Wallpaper/;
+    source = ./Wallpaper;
     recursive = true;
   };
   };
