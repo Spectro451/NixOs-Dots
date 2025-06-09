@@ -9,7 +9,7 @@
     gnumake
     unzip
     ripgrep
-    kdepackages.sddm
+    kdePackages.sddm
     kitty
   ];
   
