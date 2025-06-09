@@ -27,6 +27,7 @@
     wl-clipboard
     pulseaudio
     feh
+    spotify
     libreoffice-qt6-fresh
 
     (vscode-with-extensions.override {
