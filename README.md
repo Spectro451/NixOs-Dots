@@ -33,7 +33,7 @@ Este repositorio contiene mis configuraciones personalizadas para NixOS, incluye
 - [ ] Aprender a usar nvim sin de comandos con ":"
 - [ ] Bloqueo de pantalla automatico
 - [ ] Suspension del equipo automatica
-- [ ] Agregar y personalizar Spotify
+- [x] Agregar Spotify
 - [ ] Hacer la instalacion automatica
 - [ ] ...
 
@@ -47,6 +47,12 @@ para el final de esto espero poder manejarme completamente en nix y poder usarlo
 ```bash
 # Clona el repositorio en tu HOME o donde prefieras
 git clone https://github.com/tu-usuario/.NixOs-Dots.git ~/.NixOs-Dots
+
+# Cambia con cd al directorio del repo
+cd NixOs-Dots
+
+# Ejecuta el script para el hardware
+./generate-hardware-config.sh
 
 # Debes modificar 3 archivos para que se adapten a tu nombre de host y usuario:
 
@@ -63,9 +69,6 @@ nixosConfigurations = {
   TuHost = lib.nixosSystem {
 homeConfigurations = {
   tu_usuario = home-manager.lib.homeManagerConfiguration {
-
-# Cambia al directorio de los dots
-cd ./NixOs-Dots/
 
 # Ejecuta el comando para la nueva gen
 sudo nixos-rebuild switch --flake ~/.NixOs-Dots#TuHost
@@ -95,13 +98,13 @@ home-manager switch --flake ~/.NixOs-Dots#tu_usuario
 - [x] Have a PowerMenu in waybar
 - [ ] Change theme based on the wallpaper
 - [x] Create an installation script
-- [ ] Learn to manage the system with home-manager
+- [x] Learn to manage the system with home-manager
 - [ ] Modularize my system
 - [ ] Add useful keybinds to the system
 - [ ] Learn to use nvim without needing ":" commands
 - [ ] Automatic screen lock
 - [ ] Automatic system suspend
-- [ ] Install Spotify and tune it
+- [x] Install Spotify and tune it
 - [ ] Make a install script
 - [ ] ...
 
@@ -114,33 +117,36 @@ By the end of this process, I aim to be fully proficient with Nix and use it as 
 ## Installation
 
 ```bash
-# Clone the repository into your HOME or any preferred location
-git clone https://github.com/your-username/.NixOs-Dots.git ~/.NixOs-Dots
+# Clone the repository in your HOME or wherever you prefer
+git clone https://github.com/your-user/.NixOs-Dots.git ~/.NixOs-Dots
 
-# You must edit 3 files to match your hostname and username:
+# Change into the repo directory
+cd NixOs-Dots
+
+# Run the script for the hardware
+./generate-hardware-config.sh
+
+# You must modify 3 files to match your hostname and username:
 
 # In configuration.nix
 networking.hostName = "YourHost";
-users.users.your_username
+users.users.your_user
 
 # In home.nix
-home.username = "your_username";
-home.homeDirectory = "/home/your_username";
+home.username = "your_user";
+home.homeDirectory = "/home/your_user";
 
 # In flake.nix
 nixosConfigurations = {
   YourHost = lib.nixosSystem {
 homeConfigurations = {
-  your_username = home-manager.lib.homeManagerConfiguration {
+  your_user = home-manager.lib.homeManagerConfiguration {
 
-# Change to the dotfiles directory
-cd ./NixOs-Dots/
-
-# Run the system rebuild command
+# Run the command for the new generation
 sudo nixos-rebuild switch --flake ~/.NixOs-Dots#YourHost
 
-# Run the user configuration command
-home-manager switch --flake ~/.NixOs-Dots#your_username
+# Run the command for the user variables
+home-manager switch --flake ~/.NixOs-Dots#your_user
 ```
 </details>
 
