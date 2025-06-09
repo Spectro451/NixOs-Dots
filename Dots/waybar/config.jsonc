@@ -23,10 +23,10 @@
 },
 	"custom/wallpaper":{
         "format": "  ",
-        "on-click": "../hypr/Scripts/WallPaper.zsh"
+        "on-click": "bash -c '$HOME/.config/hypr/Scripts/WallPaper.sh'"
 },
 "custom/automatico":{
-        "exec": "../hypr/Scripts/WallPaper.zsh",
+        "exec": "bash -c '$HOME/.config/hypr/Scripts/WallPaper.sh'",
         "interval": 600
 },
     "cava": {
