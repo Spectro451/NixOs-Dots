@@ -27,6 +27,7 @@
     wl-clipboard
     pulseaudio
     feh
+    libreoffice-qt6-fresh
 
     (vscode-with-extensions.override {
       vscodeExtensions = with pkgs.vscode-extensions; [

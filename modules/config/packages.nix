@@ -1,7 +1,7 @@
 { config, pkgs, ... }: 
 
 {
-  environment.systemPackages = with pkgs; [
+  environment.systempackages = with pkgs; [
     nano
     curl
     git
@@ -9,7 +9,7 @@
     gnumake
     unzip
     ripgrep
-    kdePackages.sddm
+    kdepackages.sddm
     kitty
   ];
   
