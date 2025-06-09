@@ -43,7 +43,6 @@
 
   ".config/hypr/Scripts/Inicio.zsh".source = ./Scripts/Inicio.zsh;
   ".config/hypr/Scripts/WallPaper.zsh".source = ./Scripts/WallPaper.zsh;
-  #".config/hypr/hyprland.conf".source = ./Dots/hypr/hyprland.conf;
   ".config/hypr/hyprlock.conf".source = ./Dots/hypr/hyprlock.conf;
   ".config/waybar/config.jsonc".source = ./Dots/waybar/config.jsonc;
   ".config/waybar/style.css".source = ./Dots/waybar/style.css;
@@ -67,6 +66,10 @@
   ".config/cava/shaders/winamp_line_style_spectrum.frag".source = ./Dots/cava/shaders/winamp_line_style_spectrum.frag;
   ".config/hypr/Scripts/Inicio.zsh".executable = true;
   ".config/hypr/Scripts/WallPaper.zsh".executable = true;
+  ".config/hypr/WallPaper" = {
+    source = ./Wallpaper/;
+    recursive = true;
+  };
   };
 
   # Let Home Manager install and manage itself.
