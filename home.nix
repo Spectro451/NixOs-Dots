@@ -9,6 +9,7 @@
   imports = [
     ./modules/home/zsh.nix
     ./modules/home/hyprland.nix
+    ./modules/home/fastfetch
   ];
   home.packages = with pkgs; [
     ranger
@@ -57,7 +58,7 @@
   ".config/kitty/kitty.conf".source = ./Dots/kitty/kitty.conf;
   ".config/kitty/current-theme.conf".source = ./Dots/kitty/current-theme.conf;
   ".config/htop/htoprc".source = ./Dots/htop/htoprc;
-  ".config/fastfetch/config.jsonc".source = ./Dots/fastfetch/config.jsonc;
+  #".config/fastfetch/config.jsonc".source = ./Dots/fastfetch/config.jsonc;
   ".config/cava/config".source = ./Dots/cava/config;
   ".config/cava/shaders/spectrogram.frag".source = ./Dots/cava/shaders/spectrogram.frag;
   ".config/cava/shaders/bar_spectrum.frag".source = ./Dots/cava/shaders/bar_spectrum.frag;
