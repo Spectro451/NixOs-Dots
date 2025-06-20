@@ -6,31 +6,31 @@ let
   greenBright = "8bd450";
   purpleDark = "734f9a";
   purpleLight = "965fd4";
-  darkBg = "1d1a2f";
+  darkBg = "4b4a52";
   
   #inicio seccion
   header = {
-    type = "custom";
-    format = "┌{$1}{$1}┐";
-    outputColor = 90;
+  type = "custom";
+  format = "┌{\$1}{\$1}┐";
+  outputColor = "90";
   };
   #fin seccion
   footer = {
     type = "custom";
-    format = "└{$1}{$1}┘";
+    format = "└┘";
     outputColor = 90;
   };
 
   #ColorBar
   ColorBar = {
     type = "custom";
-    format = ''
-      {##${greenDark}}  {##${greenBright}}  {##${purpleDark}}  {##${purpleLight}}  {##${darkBg}}  
-      {##${purpleLight}}  {##${purpleDark}}  {##${greenBright}}  {##${greenDark}}  {##${darkBg}}  
-      {##${greenDark}}  {##${greenBright}}  {##${purpleDark}}  {##${purpleLight}}  {##${darkBg}}  
-      {##${purpleLight}}  {##${purpleDark}}  {##${greenBright}}  {##${greenDark}}  {##${darkBg}}  
-      {##${purpleDark}}
-    '';
+    format = 
+      "{##${greenDark}}  {##${greenBright}}  {##${purpleDark}}  {##${purpleLight}}  {##${darkBg}}  "+
+      "{##${purpleLight}}  {##${purpleDark}}  {##${greenBright}}  {##${greenDark}}  {##${darkBg}}  "+
+      "{##${greenDark}}  {##${greenBright}}  {##${purpleDark}}  {##${purpleLight}}  {##${darkBg}}  "+
+      "{##${purpleLight}}  {##${purpleDark}}  {##${greenBright}}  {##${greenDark}}  {##${darkBg}}  "+
+      "{##${purpleDark}} "
+    ;
   };
 in 
 {
@@ -56,9 +56,15 @@ in
           type = "title";
           keyWidth = 10;
         }
-        footer
+        #footer
         ColorBar
-        header
+        #header
+        {
+          type = "os";
+          key = "{icon} OS";
+          keyColor = "yellow";
+          format = "{pretty-name} ({arch})";
+        }
       ];
     };
   };
