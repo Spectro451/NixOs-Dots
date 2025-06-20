@@ -8,9 +8,10 @@
         "type": "kitty",
         "padding": {
             "top": 2,
-            "left": 5
+            "left": 4,
+            "rigth": 0
         },
-        "width": "50"
+        "width": 50
 
     },
     "ascii":{
