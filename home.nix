@@ -58,7 +58,6 @@
   ".config/kitty/kitty.conf".source = ./Dots/kitty/kitty.conf;
   ".config/kitty/current-theme.conf".source = ./Dots/kitty/current-theme.conf;
   ".config/htop/htoprc".source = ./Dots/htop/htoprc;
-  #".config/fastfetch/config.jsonc".source = ./Dots/fastfetch/config.jsonc;
   ".config/cava/config".source = ./Dots/cava/config;
   ".config/cava/shaders/spectrogram.frag".source = ./Dots/cava/shaders/spectrogram.frag;
   ".config/cava/shaders/bar_spectrum.frag".source = ./Dots/cava/shaders/bar_spectrum.frag;
@@ -67,7 +66,7 @@
   ".config/cava/shaders/winamp_line_style_spectrum.frag".source = ./Dots/cava/shaders/winamp_line_style_spectrum.frag;
   ".config/hypr/Scripts/Inicio.zsh".executable = true;
   ".config/hypr/Scripts/WallPaper.zsh".executable = true;
-  ".config/fastfetch/logo/punpun.png".source = ./Dots/fastfetch/logo/punpun.png;
+  ".config/fastfetch/logo/punpun.jpg".source = ./modules/home/fastfetch/logo/punpun.jpg;
   ".config/hypr/WallPaper" = {
     source = ./Wallpaper;
     recursive = true;
