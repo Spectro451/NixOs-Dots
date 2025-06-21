@@ -66,7 +66,7 @@
   ".config/cava/shaders/winamp_line_style_spectrum.frag".source = ./Dots/cava/shaders/winamp_line_style_spectrum.frag;
   ".config/hypr/Scripts/Inicio.zsh".executable = true;
   ".config/hypr/Scripts/WallPaper.zsh".executable = true;
-  ".config/fastfetch/logo/punpun.jpg".source = ./modules/home/fastfetch/logo/punpun.jpg;
+  ".config/fastfetch/logo/punpun.png".source = ./modules/home/fastfetch/logo/punpun.png;
   ".config/hypr/WallPaper" = {
     source = ./Wallpaper;
     recursive = true;

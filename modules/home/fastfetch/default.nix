@@ -38,7 +38,7 @@ in
     enable = true;
     settings = {
       logo = {
-        source = "${config.home.homeDirectory}/.config/fastfetch/logo/punpun.jpg";
+        source = "${config.home.homeDirectory}/.config/fastfetch/logo/punpun.png";
         type = "kitty";
         padding = { top = 2; left = 4;};
         width = 50;
