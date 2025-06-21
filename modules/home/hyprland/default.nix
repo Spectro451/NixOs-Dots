@@ -28,8 +28,8 @@
         border_size = 2;
 
         #Bordes Eva-01 style
-        col.active_border = "rgba(965fd4ff) rgba(8bd450ff) 45deg";
-        col.inactive_border = "rgba(3f6d4eee)";
+        "col.active_border" = "rgba(965fd4ff) rgba(8bd450ff) 45deg";
+        "col.inactive_border" = "rgba(3f6d4eee)";
 
         # Set to true enable resizing windows by clicking and dragging on borders and gaps
         resize_on_border = true;
@@ -43,10 +43,10 @@
         rounding_power = 2;
         
         windowrule = [
-          "opacity 1.0 override 0.85 override 1 override, title:.*youtube.*";
-          "opacity 1.0 override 0.85 override 1 override, title:.*Crunchyroll.*";
-          "opacity 1.0 override 0.85 override 1 override, title:.*Netflix.*";
-          "opacity 1.0 override 0.85 override 1 override, title:.*Max.*";
+          "opacity 1.0 override 0.85 override 1 override, title:.*youtube.*"
+          "opacity 1.0 override 0.85 override 1 override, title:.*Crunchyroll.*"
+          "opacity 1.0 override 0.85 override 1 override, title:.*Netflix.*"
+          "opacity 1.0 override 0.85 override 1 override, title:.*Max.*"
         ];
       };
     };
