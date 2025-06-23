@@ -2,7 +2,7 @@
 
 let
   terminal = "kitty";
-  filemanager = "kitty -e ranger";
+  filemanager = "kitty -e sudo -E ranger --cmd='set preview_files true' --cmd='set use_preview_script true' --cmd='set preview_directories true' --cmd='set preview_images true'";
   menu = "rofi -show drun";
 in  
 {
@@ -11,7 +11,7 @@ in
     settings = {
       
       #Monitor
-      monitor = [ "DP-2,1920x1080@164.83,0x0,1" ];
+      monitor = [ "eDP-1,1920x1080@164.83,0x0,1" ];
 
       #Start
       exec-once = [
@@ -70,7 +70,7 @@ in
           enabled = true;
           size = 4;
           passes = 2;
-          vibrancy = 0.6
+          vibrancy = 0.6;
         };
       };
 
@@ -187,20 +187,20 @@ in
         "SUPER, 0, workspace, 10"
 
         #MoveWindows
-        "SUPER, SHIFT, 1, movetoworkspace, 1"
-        "SUPER, SHIFT, 2, movetoworkspace, 2"
-        "SUPER, SHIFT, 3, movetoworkspace, 3"
-        "SUPER, SHIFT, 4, movetoworkspace, 4"
-        "SUPER, SHIFT, 5, movetoworkspace, 5"
-        "SUPER, SHIFT, 6, movetoworkspace, 6"
-        "SUPER, SHIFT, 7, movetoworkspace, 7"
-        "SUPER, SHIFT, 8, movetoworkspace, 8"
-        "SUPER, SHIFT, 9, movetoworkspace, 9"
-        "SUPER, SHIFT, 0, movetoworkspace, 10"
+        "SUPER SHIFT, 1, movetoworkspace, 1"
+        "SUPER SHIFT, 2, movetoworkspace, 2"
+        "SUPER SHIFT, 3, movetoworkspace, 3"
+        "SUPER SHIFT, 4, movetoworkspace, 4"
+        "SUPER SHIFT, 5, movetoworkspace, 5"
+        "SUPER SHIFT, 6, movetoworkspace, 6"
+        "SUPER SHIFT, 7, movetoworkspace, 7"
+        "SUPER SHIFT, 8, movetoworkspace, 8"
+        "SUPER SHIFT, 9, movetoworkspace, 9"
+        "SUPER SHIFT, 0, movetoworkspace, 10"
 
         #ScreenShot
         "SUPER, S, exec, hyprshot -m region"
-        "SUPER, SHIFT, S, exec, hyprshot -m region"
+        "SUPER SHIFT, S, exec, hyprshot -m region"
 
         #Scroll workspaces
         "SUPER, mouse_down, workspace, e+1"
