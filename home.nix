@@ -8,8 +8,7 @@
  
   imports = [
     ./modules/home/zsh.nix
-    ./modules/home/hyprland.nix
-    #./modules/home/hyprland
+    ./modules/home/hyprland
     ./modules/home/fastfetch
   ];
   home.packages = with pkgs; [
