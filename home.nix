@@ -10,6 +10,7 @@
     ./modules/home/zsh.nix
     ./modules/home/hyprland
     ./modules/home/fastfetch
+    ./modules/home/hyprland/hyprlock
   ];
   home.packages = with pkgs; [
     ranger
@@ -30,6 +31,7 @@
     feh
     spotify
     libreoffice-qt6-fresh
+    imagemagick
 
     (vscode-with-extensions.override {
       vscodeExtensions = with pkgs.vscode-extensions; [
@@ -44,7 +46,7 @@
 
   ".config/hypr/Scripts/Inicio.zsh".source = ./Scripts/Inicio.zsh;
   ".config/hypr/Scripts/WallPaper.zsh".source = ./Scripts/WallPaper.zsh;
-  ".config/hypr/hyprlock.conf".source = ./Dots/hypr/hyprlock.conf;
+  #".config/hypr/hyprlock.conf".source = ./Dots/hypr/hyprlock.conf;
   ".config/waybar/config.jsonc".source = ./Dots/waybar/config.jsonc;
   ".config/waybar/style.css".source = ./Dots/waybar/style.css;
   ".config/rofi/colors.rasi".source = ./Dots/rofi/colors.rasi;

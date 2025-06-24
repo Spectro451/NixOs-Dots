@@ -58,7 +58,7 @@ in
           "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
         ];
 
-        active_opacity = 1;
+        active_opacity = 0.90;
         inactive_opacity = 0.85;
         
         shadow = {

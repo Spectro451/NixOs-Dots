@@ -39,6 +39,9 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  #PAM
+  security.pam.services.hyprlock = {};
+
   #Version
   system.stateVersion = "25.05"; # Did you read the comment? Nop
 
