@@ -11,7 +11,9 @@ in
     settings = {
       
       #Monitor
-      monitor = [ "eDP-1,1920x1080@164.83,0x0,1" ];
+      monitor = [ 
+      ",1920x1080@164.83,0x0,1" 
+      ];
 
       #Start
       exec-once = [
