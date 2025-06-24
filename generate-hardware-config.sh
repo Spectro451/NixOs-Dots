@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-sudo nixos-generate-config --dir "$HOME/NixOs-Dots"
+sudo nixos-generate-config
+cp /etc/nixos/hardware-configuration.nix ~/NixOs-Dots/
 
-echo "Ta listo el coso"
+echo "ta listo"
