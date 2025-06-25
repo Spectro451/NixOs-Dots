@@ -123,6 +123,70 @@
             }
           ];
         };
+        "hyprland/language" = {
+          format = "  {1}";
+          tooltip = false;
+        };
+        cpu = {
+          interval = 15;
+          format = "  {}%";
+          max-length = 10;
+        };
+        memory = {
+          interval = 30;
+          format = "  {}%";
+          max-length = 10;
+        };
+        "custom/launcher" = {
+          format = " ";
+          on-click = "rofi -show drun";
+          on-click-right = "killall rofi";
+          tooltip = false;
+        };
+        "custom/power" = {
+          format = "⏻ ";
+          tooltip = false;
+          on-click = "bash ~/.config/rofi/powermenu.sh";
+          on-click-right = "killall rofi";
+        };
+        clock = {
+          format = "{:%H:%M}";
+	        format-alt = "{:%d/%m/%Y}";
+	        tooltip-format = "<tt><small>{calendar}</small></tt>";
+          calendar = {
+            mode = "year";
+            mode-mon-col = 3;
+            weeks-pos = "right";
+            on-scroll = 1;
+            format = {
+              months = "<span color='#ffead3'><b>{}</b></span>";
+              days = "<span color='#ecc6d9'><b>{}</b></span>";
+              weeks = "<span color='#99ffdd'><b>W{}</b></span>";
+              weekdays = "<span color='#ffcc66'><b>{}</b></span>";
+              today = "<span color='#ff6699'><b><u>{}</u></b></span>";
+            };
+          };
+          actions = {
+            on-click-right = "mode";
+            on-scroll-up = "shift_up";
+            on-scroll-down = "shift_down";
+          };
+        };
+        "hyprland/workspaces" = {
+          format = "{icon}";
+          tooltip = false;
+          format-icons = {
+            "1" = " 󰞷 ";
+            "2" = "  ";
+            "3" = "  ";
+            "4" = " 󰍹 ";
+            "5" = " 󰍹 ";
+          };
+          on-click = "activate";
+          persistent-workspaces = {
+            "*" = 3;
+          };
+        };
       }
     ];
   };
