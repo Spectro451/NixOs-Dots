@@ -46,8 +46,7 @@
   home.file = {
     ".config/hypr/Scripts/Inicio.zsh".source = ./Scripts/Inicio.zsh;
     ".config/hypr/Scripts/WallPaper.zsh".source = ./Scripts/WallPaper.zsh;
-    #".config/waybar/config.jsonc".source = ./Dots/waybar/config.jsonc;
-    ".config/waybar/style.css".source = ./Dots/waybar/style.css;
+    #".config/waybar/style.css".source = ./Dots/waybar/style.css;
     ".config/rofi/colors.rasi".source = ./Dots/rofi/colors.rasi;
     ".config/rofi/config.rasi".source = ./Dots/rofi/config.rasi;
     ".config/rofi/fonts.rasi".source = ./Dots/rofi/fonts.rasi;

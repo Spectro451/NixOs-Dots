@@ -1,9 +1,9 @@
 { config, pkgs, ... }:
 
 {
-  #imports = [
-  #  ./style.nix
-  #];
+  imports = [
+    ./style.nix
+  ];
 
   programs.waybar = {
     enable = true;
