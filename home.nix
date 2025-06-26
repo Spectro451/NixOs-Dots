@@ -35,6 +35,7 @@
     spotify
     libreoffice-qt6-fresh
     imagemagick
+    hypridle
 
     (vscode-with-extensions.override {
       vscodeExtensions = with pkgs.vscode-extensions; [
