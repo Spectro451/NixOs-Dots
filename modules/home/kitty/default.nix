@@ -19,7 +19,6 @@
       hide_window_decorations = true;
       confirm_os_window_close = 0;
       close_on_child_death = true;
-      
     };
   };
 }
