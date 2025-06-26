@@ -6,6 +6,7 @@ in
 {
   imports = [
     ./alias.nix
+    ./maps.nix
   ];
   programs.ranger = {
     enable =true;
@@ -92,5 +93,57 @@ in
       nested_ranger_warning = true;
     };
     
+    extraConfig = ''
+      #EspecialKey
+      map <C-r> reset
+      map <C-l> redraw_window
+      map <C-c> abort
+      map <esc> change_mode normal
+      map <A-j> scroll_preview 1
+      map <A-k> scroll_preview -1
+      map <C-p> chain console; eval fm.ui.console.history_move(-1)
+      map "<any> tag_toggle tag=%any
+      map <Space> mark_files toggle=True
+      map <F1> help
+      map <F2> rename_append
+      map <F3> display_file
+      map <F4> edit
+      map <F5> copy
+      map <F6> cut
+      map <F7> console mkdir%space
+      map <F8> console delete
+      #map <F8> console trash
+      map <F10> exit
+
+      # In case you work on a keyboard with dvorak layout
+      map <UP>       move up=1
+      map <DOWN>     move down=1
+      map <LEFT>     move left=1
+      map <RIGHT>    move right=1
+      map <HOME>     move to=0
+      map <END>      move to=-1
+      map <PAGEDOWN> move down=1   pages=True
+      map <PAGEUP>   move up=1     pages=True
+      map <CR>       move right=1
+      #map <DELETE>   console delete
+      map <INSERT>   console touch%space
+
+      # VIM-like
+      copymap <UP>       k
+      copymap <DOWN>     j
+      copymap <LEFT>     h
+      copymap <RIGHT>    l
+      copymap <HOME>     gg
+      copymap <END>      G
+      copymap <PAGEDOWN> <C-F>
+      copymap <PAGEUP>   <C-B>
+      map J  move down=0.5  pages=True
+      map K  move up=0.5    pages=True
+      
+      #CopyMaps
+      copymap q ZZ ZQ
+      copymap J <C-D>
+      copymap K <C-U>
+    '';
   };
 }
