@@ -7,10 +7,12 @@
         border: none;
         font-family: "Fira Code Nerd Font";
         font-size: 13px;
-        min-height: 4px;
+        min-height: 8px;
       }
       window#waybar {
-	    background: transparent;
+	      background: transparent;
+        margin: 0px;
+        padding: 0px;
       }
       #network,
       #cava,
@@ -29,8 +31,7 @@
       #window,
       #workspaces,
       #tray{
-        margin-top: 6px;
-        margin-bottom: 2px;
+        margin: 0px;
         padding-top: 2px;
         padding-bottom: 2px;
         padding-left: 4px;
@@ -43,8 +44,7 @@
       #custom-launcher,
       #custom-power{
         font-size: 16px;
-        margin-top: 6px;
-        margin-bottom: 2px;
+        margin: 0px;
         padding-left: 10px;
         padding-right: 5px;
         background: #1d1a2f;

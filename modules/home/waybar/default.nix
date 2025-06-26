@@ -12,6 +12,7 @@
       {
         #Bar
         layer = "top";
+        position = "top";
         modules-left = ["custom/launcher" "hyprland/workspaces"];
         modules-center = ["hyprland/window"];
         modules-right = ["cpu" "memory" "disk" "keyboard-state" "custom/wallpaper" "custom/automatico" "tray" "cava" "backlight" "pulseaudio" "battery" "clock" "custom/power"];
@@ -138,7 +139,7 @@
           max-length = 10;
         };
         "custom/launcher" = {
-          format = " ";
+          format = " ";
           on-click = "rofi -show drun";
           on-click-right = "killall rofi";
           tooltip = false;

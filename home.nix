@@ -3,7 +3,7 @@
 {
   home.username = "kiwi";
   home.homeDirectory = "/home/kiwi";
-    #Version compatible del home
+  #Version compatible del home
   home.stateVersion = "25.05"; # Please read the comment before changing.
  
   imports = [
