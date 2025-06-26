@@ -4,6 +4,9 @@ let
   ranger = pkgs.ranger;
 in
 {
+  imports = [
+    ./alias.nix
+  ];
   programs.ranger = {
     enable =true;
 
@@ -88,5 +91,6 @@ in
       size_in_bytes = false;
       nested_ranger_warning = true;
     };
+    
   };
 }
