@@ -20,6 +20,7 @@ in
         "${config.home.homeDirectory}/.config/hypr/Scripts/Wallpaper.zsh"
         "${config.home.homeDirectory}/.config/hypr/Scripts/Inicio.zsh"
         "waybar"
+        "hypridle"
       ];
 
       #Env

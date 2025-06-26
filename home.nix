@@ -55,6 +55,7 @@
     ".config/rofi/menu.rasi".source = ./Dots/rofi/menu.rasi;
     ".config/rofi/powermenu.sh".source = ./Dots/rofi/powermenu.sh;
     ".config/rofi/powermenu.rasi".source = ./Dots/rofi/powermenu.rasi;
+    ".config/hypr/hypridle.conf".source = ./Dots/hypridle/hypridle.conf;
     #".config/ranger/rc.conf".source = ./Dots/ranger/rc.conf;
     ".config/ranger/rifle.conf".source = ./Dots/ranger/rifle.conf;
     ".config/htop/htoprc".source = ./Dots/htop/htoprc;
