@@ -12,6 +12,7 @@
     ./modules/home/fastfetch
     ./modules/home/hyprland/hyprlock
     ./modules/home/waybar
+    ./modules/home/kitty
   ];
   home.packages = with pkgs; [
     ranger
@@ -54,8 +55,8 @@
     ".config/rofi/powermenu.rasi".source = ./Dots/rofi/powermenu.rasi;
     ".config/ranger/rc.conf".source = ./Dots/ranger/rc.conf;
     ".config/ranger/rifle.conf".source = ./Dots/ranger/rifle.conf;
-    ".config/kitty/kitty.conf".source = ./Dots/kitty/kitty.conf;
-    ".config/kitty/current-theme.conf".source = ./Dots/kitty/current-theme.conf;
+    #".config/kitty/kitty.conf".source = ./Dots/kitty/kitty.conf;
+    #".config/kitty/current-theme.conf".source = ./Dots/kitty/current-theme.conf;
     ".config/htop/htoprc".source = ./Dots/htop/htoprc;
     ".config/cava/config".source = ./Dots/cava/config;
     ".config/cava/shaders/spectrogram.frag".source = ./Dots/cava/shaders/spectrogram.frag;
