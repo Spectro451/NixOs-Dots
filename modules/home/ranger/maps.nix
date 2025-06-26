@@ -2,7 +2,7 @@
 
 {
   programs.ranger = {
-    mapping = {
+    mappings = {
       #Basic
       Q = "quitall";
       q = "quit";
