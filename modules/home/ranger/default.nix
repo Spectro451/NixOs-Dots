@@ -139,6 +139,10 @@ in
       copymap <PAGEUP>   <C-B>
       map J  move down=0.5  pages=True
       map K  move up=0.5    pages=True
+
+      #External
+      map du shell -p du --max-depth=1 -h --apparent-size
+      map dU shell -p du --max-depth=1 -h --apparent-size | sort -rh
       
       #CopyMaps
       copymap q ZZ ZQ
