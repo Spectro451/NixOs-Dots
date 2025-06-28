@@ -11,6 +11,7 @@
     ./modules/home/hyprland
     ./modules/home/fastfetch
     ./modules/home/hyprland/hyprlock
+    ./modules/home/hyprland/hypridle
     ./modules/home/waybar
     ./modules/home/kitty
     ./modules/home/ranger
@@ -55,7 +56,7 @@
     ".config/rofi/menu.rasi".source = ./Dots/rofi/menu.rasi;
     ".config/rofi/powermenu.sh".source = ./Dots/rofi/powermenu.sh;
     ".config/rofi/powermenu.rasi".source = ./Dots/rofi/powermenu.rasi;
-    ".config/hypr/hypridle.conf".source = ./Dots/hypridle/hypridle.conf;
+    #".config/hypr/hypridle.conf".source = ./Dots/hypridle/hypridle.conf;
     ".config/ranger/rifle.conf".source = ./modules/home/ranger/rifle.conf;
     ".config/htop/htoprc".source = ./Dots/htop/htoprc;
     ".config/cava/config".source = ./Dots/cava/config;
