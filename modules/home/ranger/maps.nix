@@ -82,8 +82,91 @@ in
 
       #fileSystem
       "=" = "chmod";
+      cw = "console rename%space";
+      a = "rename_append";
+      pp = "paste";
+      po = "paste overwrite=True";
+      pP = "paste append=True";
+      pO = "paste overwrite=True append=True";
+      pl = "paste_symlink relative=False";
+      pL = "paste_symlink relative=True";
+      phl = "paste_hardlink";
+      pht = "paste_hardlinked_subtree";
+      pd = "console paste dest=";
+      dD = "console delete";
+      dT = "console trash";
+      dd = "cut";
+      ud = "uncut";
+      da = "cut mode=add";
+      dr = "cut mode=remove";
+      dt = "cut mode=toggle";
+      yy = "copy";
+      uy = "uncut";
+      ya = "copy mode=add";
+      yr = "copy mode=remove";
+      yt = "copy mode=toggle";
 
+      #TemporaryWorkarounds
+      dgg = "eval fm.cut(dirarg=dict(to=0), narg=quantifier)";
+      dG = "eval fm.cut(dirarg=dict(to=-1), narg=quantifier)";
+      dj = "eval fm.cut(dirarg=dict(down=1), narg=quantifier)";
+      dk = "eval fm.cut(dirarg=dict(up=1), narg=quantifier)";
+      ygg = "eval fm.copy(dirarg=dict(to=0), narg=quantifier)";
+      yG = "eval fm.copy(dirarg=dict(to=-1), narg=quantifier)";
+      yj = "eval fm.copy(dirarg=dict(down=1), narg=quantifier)";
+      yk = "eval fm.copy(dirarg=dict(up=1), narg=quantifier)";
 
+      #searching
+      n = "search_next";
+      N = "search_next forward=False";
+      ct = "search_next order=tag";
+      cs = "search_next order=size";
+      ci = "search_next order=mimetype";
+      cc = "search_next order=ctime";
+      cm = "search_next order=mtime";
+      ca = "search_next order=atime";
+
+      #tabs
+      gt = "tab_move 1";
+      gT = "tab_move -1";
+      gn = "tab_new";
+      gc = "tab_close";
+      uq = "tab_restore";
+
+      #sorting
+      or = "set sort_reverse!";
+      oz = "sort=random";
+      dc = "get_cumulative_size";
+
+      #settings
+      zc = "set collapse_preview!";
+      zd = "set sort_directories_first!";
+      zh = "set show_hidden!";
+      zI = "set flushinput!";
+      zi = "set preview_images!";
+      zm = "set mouse_enabled!";
+      zp = "set preview_files!";
+      zP = "set preview_directories!";
+      zs = "set sort_case_insensitive!";
+      zu = "set autoupdate_cumulative_size!";
+      zv = "set use_preview_script!";
+      zf = "console filter%space";
+
+      #filterStack
+      ".d" = "filter_stack add type d";
+      ".f" = "filter_stack add type f";
+      ".l" = "filter_stack add type l";
+      ".m" = "console filter_stack add mime%space";
+      ".n" = "console filter_stack add name%space";
+      ".#" = "console filter_stack add hash%space";
+      ".|" = "filter_stack add or";
+      ".&" = "filter_stack add and";
+      ".!" = "filter_stack add not";
+      ".r" = "filter_stack rotate";
+      ".c" = "filter_stack clear";
+      ".*" = "filter_stack decompose";
+      ".p" = "filter_stack pop";
+      ".." = "filter_stack show";
     };
   };
 }
