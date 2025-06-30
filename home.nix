@@ -15,6 +15,7 @@
     ./modules/home/waybar
     ./modules/home/kitty
     ./modules/home/ranger
+    ./modules/home/dev.nix
   ];
   home.packages = with pkgs; [
     ranger
@@ -37,6 +38,12 @@
     libreoffice-qt6-fresh
     imagemagick
     hypridle
+    
+    #Cositas lindas
+    openjdk21           
+    maven                
+    nodejs_20            
+    nodePackages.angular-cli
 
     (vscode-with-extensions.override {
       vscodeExtensions = with pkgs.vscode-extensions; [
