@@ -5,21 +5,19 @@
     openjdk21
     maven
     nodejs_20
-    nodePackages.angular-cli
+    jetbrains.idea-community
+    lombok
+    postman
   ];
   programs.java = {
     enable = true;
-    package = pkgs.openjdk21
-  };
-  programs.jetbrains.idea = {
-    enable = true;
-    package = pkgs.jetbrains.idea-ultimate;
+    package = pkgs.openjdk21;
   };
   programs.vscode = {
     enable = true;
     package = pkgs.vscode;
-    extensions = with pkgs.vscode-extensions; [
-      vscode-java-pack
+    profiles.default.extensions = with pkgs.vscode-extensions; [
+      vscjava.vscode-java-pack
       redhat.java
       vscjava.vscode-maven
       vscjava.vscode-java-debug

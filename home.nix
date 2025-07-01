@@ -39,19 +39,6 @@
     imagemagick
     hypridle
     
-    #Cositas lindas
-    openjdk21           
-    maven                
-    nodejs_20            
-    nodePackages.angular-cli
-
-    (vscode-with-extensions.override {
-      vscodeExtensions = with pkgs.vscode-extensions; [
-      vscjava.vscode-java-pack
-      ms-python.python
-      eamodio.gitlens
-      ];
-    }) 
   ];
 
   home.file = {
