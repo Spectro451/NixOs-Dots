@@ -16,6 +16,7 @@
     ./modules/home/kitty
     ./modules/home/ranger
     ./modules/home/dev.nix
+    ./modules/home/rofi
   ];
   home.packages = with pkgs; [
     ranger
@@ -44,12 +45,12 @@
   home.file = {
     ".config/hypr/Scripts/Inicio.zsh".source = ./Scripts/Inicio.zsh;
     ".config/hypr/Scripts/WallPaper.zsh".source = ./Scripts/WallPaper.zsh;
-    ".config/rofi/colors.rasi".source = ./Dots/rofi/colors.rasi;
-    ".config/rofi/config.rasi".source = ./Dots/rofi/config.rasi;
-    ".config/rofi/fonts.rasi".source = ./Dots/rofi/fonts.rasi;
-    ".config/rofi/menu.rasi".source = ./Dots/rofi/menu.rasi;
+    #".config/rofi/colors.rasi".source = ./Dots/rofi/colors.rasi;
+    #".config/rofi/config.rasi".source = ./Dots/rofi/config.rasi;
+    #".config/rofi/fonts.rasi".source = ./Dots/rofi/fonts.rasi;
+    #".config/rofi/menu.rasi".source = ./Dots/rofi/menu.rasi;
     ".config/rofi/powermenu.sh".source = ./Dots/rofi/powermenu.sh;
-    ".config/rofi/powermenu.rasi".source = ./Dots/rofi/powermenu.rasi;
+    #".config/rofi/powermenu.rasi".source = ./Dots/rofi/powermenu.rasi;
     ".config/ranger/rifle.conf".source = ./modules/home/ranger/rifle.conf;
     ".config/htop/htoprc".source = ./Dots/htop/htoprc;
     ".config/cava/config".source = ./Dots/cava/config;
