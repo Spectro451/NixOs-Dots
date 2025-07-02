@@ -1,7 +1,7 @@
 
 # Mis Dotfiles para NixOs
 
-Este repositorio contiene mis configuraciones personalizadas para NixOS, incluyendo archivos de configuración del sistema, scripts personales y wallpapers.
+Esta rama contiene los cambios de mis dots antes de que empezara a modularizar el home, por si te llegan a gustar pero no quieres adentrarte tanto con home manager
 
 ## Secciones
 
