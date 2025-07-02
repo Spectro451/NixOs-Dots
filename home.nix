@@ -24,7 +24,6 @@
     btop
     swww
     waybar
-    rofi-wayland
     protonup
     discord
     fastfetch
