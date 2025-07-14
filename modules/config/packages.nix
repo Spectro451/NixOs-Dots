@@ -11,6 +11,7 @@
     ripgrep
     kdePackages.sddm
     kitty
+    home-manager
   ];
   
   #Fuentes del sistema

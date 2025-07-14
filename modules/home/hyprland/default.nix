@@ -12,7 +12,10 @@ in
       
       #Monitor
       monitor = [ 
-      ",1920x1080@164.83,0x0,1" 
+        "eDP-1,1920x1080@60,0x0,1"
+        "HDMI-A-1, 1920x1080@60, auto, 1, mirror, eDP-1"
+        #"eDP-1, disable"
+        #"HDMI-A-1, 1920x1080@60, 0x0, 1"
       ];
 
       #Start
@@ -51,12 +54,15 @@ in
         rounding_power = 2;
         
         windowrule = [
-          "opacity 1.0 override 0.85 override 1 override, title:.*youtube.*"
+          "opacity 1.0 override 0.85 override 1 override, title:.*YouTube.*"
           "opacity 1.0 override 0.85 override 1 override, title:.*Crunchyroll.*"
           "opacity 1.0 override 0.85 override 1 override, title:.*Netflix.*"
           "opacity 1.0 override 0.85 override 1 override, title:.*Max.*"
           "suppressevent maximize, class:.*"
           "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
+        ];
+        windowrulev2 = [
+          "idleinhibit fullscreen, class:.*"
         ];
 
         active_opacity = 0.90;
