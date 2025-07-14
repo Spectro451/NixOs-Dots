@@ -2,17 +2,18 @@
 
 {
   home.packages = with pkgs;  [
-    openjdk21
-    maven
-    nodejs_20
-    jetbrains.idea-community
-    lombok
-    postman
+    #openjdk21
+    #maven
+    nodejs_22
+    pnpm
+    #jetbrains.idea-community
+    #lombok
+    #postman
   ];
-  programs.java = {
-    enable = true;
-    package = pkgs.openjdk21;
-  };
+  #programs.java = {
+   # enable = true;
+    #package = pkgs.openjdk21;
+  #};
   programs.vscode = {
     enable = true;
     package = pkgs.vscode;
