@@ -7,6 +7,7 @@
 
   programs.waybar = {
     enable = true;
+    systemd.enable = true;
 
     settings = [
       {
@@ -42,7 +43,8 @@
         };
         "custom/automatico" = {
           exec = "sh -c '$HOME/.config/hypr/Scripts/WallPaper.zsh'";
-          interval = 600;
+          interval = 10;
+          format = "";
         };
         cava = {
           framerate = 240;
