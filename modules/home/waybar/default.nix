@@ -16,7 +16,7 @@
         position = "top";
         modules-left = ["custom/launcher" "hyprland/workspaces"];
         modules-center = ["hyprland/window"];
-        modules-right = ["cpu" "memory" "disk" "keyboard-state" "custom/wallpaper" "custom/automatico" "tray" "cava" "backlight" "pulseaudio" "battery" "clock" "custom/power"];
+        modules-right = ["idle_inhibitor" "cpu" "memory" "disk" "keyboard-state" "custom/wallpaper" "custom/automatico" "tray" "cava" "backlight" "pulseaudio" "battery" "clock" "custom/power"];
 
         #Modules
         pulseaudio = {
@@ -43,7 +43,7 @@
         };
         "custom/automatico" = {
           exec = "sh -c '$HOME/.config/hypr/Scripts/WallPaper.zsh'";
-          interval = 10;
+          interval = 300;
           format = "";
         };
         cava = {
@@ -63,6 +63,9 @@
           noise_reduction = 0.77;
           input_delay = 0;
           format-icons = ["▁" "▂" "▃" "▄" "▅" "▆" "▇" "█" ];
+        };
+        idle_inhibitor = {
+          format = "  ";
         };
         "custom/keybinds" = {
           format = "{icon} KB";
