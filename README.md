@@ -22,19 +22,20 @@ Este repositorio contiene mis configuraciones personalizadas para NixOS, incluye
 - [x] Añadir vscode
 - [x] Configurar waybar
 - [x] Darle un layout de inicio a mi hyprland
-- [ ] Declarar las extensiones que quiero para VsCode
+- [x] Declarar las extensiones que quiero para VsCode
 - [x] Permitir cambiar de fondo desde waybar y automatico
 - [x] Tener un PowerMenu en waybar
 - [ ] Poder cambiar el tema en base al fondo
 - [x] Crear un Script de instalacion
 - [x] Aprender a manejar el sistema por home-manager
-- [ ] Modularizar mi sistema
+- [x] Modularizar mi sistema
 - [ ] Agregar binds utiles en el sistema
 - [ ] Aprender a usar nvim sin de comandos con ":"
-- [ ] Bloqueo de pantalla automatico
-- [ ] Suspension del equipo automatica
+- [x] Bloqueo de pantalla automatico
+- [x] Suspension del equipo automatica
 - [x] Agregar Spotify
 - [ ] Hacer la instalacion automatica
+- [ ] Tener el sistema con multiples host en vez de branch para mis equipos
 - [ ] ...
 
 ## Objetivo
@@ -93,19 +94,20 @@ home-manager switch --flake ~/.NixOs-Dots#tu_usuario
 - [x] Add VSCode
 - [x] Configure waybar
 - [x] Set up an initial layout for Hyprland
-- [ ] Declare the VSCode nsions I want
+- [x] Declare the VSCode extensions I want
 - [x] Allow wallpaper changes from waybar and automatically
 - [x] Have a PowerMenu in waybar
 - [ ] Change theme based on the wallpaper
 - [x] Create an installation script
 - [x] Learn to manage the system with home-manager
-- [ ] Modularize my system
+- [x] Modularize my system
 - [ ] Add useful keybinds to the system
 - [ ] Learn to use nvim without needing ":" commands
-- [ ] Automatic screen lock
-- [ ] Automatic system suspend
+- [x] Automatic screen lock
+- [x] Automatic system suspend
 - [x] Install Spotify and tune it
 - [ ] Make a install script
+- [ ] Make the flake with multiple host to not depend of the branch of github
 - [ ] ...
 
 ## Main objective
