@@ -28,6 +28,7 @@
       #idle_inhibitor,
       #memory,
       #cpu,
+      #idle_inhibitor,
       #window,
       #workspaces,
       #tray{
@@ -86,11 +87,7 @@
         color: #32111C; 
       }
       #idle_inhibitor.activated{
-        color: #FEE5E4;
         border-color: #EF3946;
-      }
-      #idle_inhibitor.deactivated{
-        color: #FEE5E4
       }
       #network.disconnected {
         color: #FEE5E4;
