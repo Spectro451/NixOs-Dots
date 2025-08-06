@@ -18,14 +18,8 @@
     enable = true;
     package = pkgs.vscode;
     profiles.default.extensions = with pkgs.vscode-extensions; [
-      vscjava.vscode-java-pack
-      redhat.java
-      vscjava.vscode-maven
-      vscjava.vscode-java-debug
-      vscjava.vscode-java-test
       esbenp.prettier-vscode
       ms-python.python
-      eamodio.gitlens
     ];
   };
 }
