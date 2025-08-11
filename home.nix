@@ -38,7 +38,8 @@
     libreoffice-qt6-fresh
     imagemagick
     hypridle
-    
+    mpv
+    komikku
   ];
 
   home.file = {
