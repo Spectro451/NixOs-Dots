@@ -2,7 +2,8 @@
 
 {
   home.packages = with pkgs;  [
-    #openjdk21
+    openjdk21
+    kotlin
     #maven
     nodejs_22
     pnpm
