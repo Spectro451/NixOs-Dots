@@ -6,10 +6,11 @@
     kotlin
     #maven
     nodejs_22
+    nest-cli
     pnpm
     #jetbrains.idea-community
     #lombok
-    #postman
+    postman
   ];
   #programs.java = {
    # enable = true;

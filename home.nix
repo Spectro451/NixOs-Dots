@@ -40,6 +40,9 @@
     hypridle
     mpv
     komikku
+    protonup-qt
+    syncthing
+    obsidian
   ];
 
   home.file = {
@@ -67,6 +70,8 @@
       recursive = true;
     };
   };
+
+  services.syncthing.enable = true;
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;

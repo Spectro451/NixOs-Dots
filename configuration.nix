@@ -46,15 +46,23 @@
   system.stateVersion = "25.05"; # Did you read the comment? Nop
 
   #Sql
-  services.mysql = {
+  #services.mysql = {
+  #  enable = true;
+  #  package = pkgs.mysql80;
+  #  initialDatabases = [
+  #    {
+  
+  #    }
+  #  ];
+  #  
+  #};
+  
+  #Postgress
+  services.postgresql = {
     enable = true;
-    package = pkgs.mysql80;
-    initialDatabases = [
-      {
-        name = "inventario";
-      }
+    package = pkgs.postgresql_16;
+    ensureDatabases = [
+      "kiwiPets"
     ];
-    
   };
-
 }
