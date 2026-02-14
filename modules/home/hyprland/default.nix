@@ -22,14 +22,22 @@ in
       exec-once = [
         "swww restore"
        # "${config.home.homeDirectory}/.config/hypr/Scripts/Wallpaper.zsh"
-        "${config.home.homeDirectory}/.config/hypr/Scripts/Inicio.zsh"
+       # "${config.home.homeDirectory}/.config/hypr/Scripts/Inicio.zsh"
         "hypridle"
+        "firefox"
+        "obsidian"
+        "spotify"
+      ];
+      windowrulev2 = [
+        "workspace 1 silent, class:^(firefox)$"
+        "workspace 2 silent, class:^(obsidian)$"
+        "workspace 3 silent, class:^(spotify)$"
       ];
 
       #Env
       env = [
-        "XCURSOR_SIZE,15"
-        "HYPRCURSOR_SIZE,15"
+        "XCURSOR_SIZE,10"
+        "HYPRCURSOR_SIZE,10"
       ];
 
       #Look and Feel

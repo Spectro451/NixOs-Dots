@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{config, pkgs, ...}:
 
 {
   home.username = "kiwi";
@@ -39,7 +39,6 @@
     imagemagick
     hypridle
     mpv
-    komikku
     protonup-qt
     syncthing
     obsidian

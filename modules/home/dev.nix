@@ -11,6 +11,10 @@
     #jetbrains.idea-community
     #lombok
     postman
+    android-studio
+    libglvnd
+    tree-sitter
+    gcc
   ];
   #programs.java = {
    # enable = true;
@@ -21,8 +25,6 @@
     package = pkgs.vscode;
     profiles.default.extensions = with pkgs.vscode-extensions; [
       esbenp.prettier-vscode
-      ms-python.python
-      eamodio.gitlens
     ];
   };
 }
